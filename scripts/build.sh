@@ -5,7 +5,7 @@
 # If you're aiming to create a robust, flexible, and scalable platform, security (like a guard, or satpam) should be placed outside the core business processes. Based on this, the easiest way to implement security is by securing the environment where the business operates (i.e., creating a secure environment for business operations without interfering with the business process itself).
 
 # Later, we’ll discuss how dPanel implements security in your workflows.
-BUILD_DIR=.build-$(git rev-parse --short HEAD)
+export BUILD_DIR=.build-$(git rev-parse --short HEAD)
 
 CURRENT_VERSION=$(cat version)
 
